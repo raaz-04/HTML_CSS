@@ -1,0 +1,75 @@
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: aliceblue;
+}
+
+.hero{
+    background-image: url(galaxy.png);
+    background-size: cover;
+    width: auto;
+    height: 400px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: azure;
+ }
+
+ .navbar{
+    background-color: rgb(4, 2, 44);
+ }
+ .navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0%;
+    height: 50px;
+ }
+ .navbar ul li{
+    margin-top: auto;
+    margin-bottom: auto;
+ }
+
+.tablediv{
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 60%;
+    background-color: rgb(177, 102, 212);
+    text-align: center;
+}
+ th , td {
+    border: 3px solid rgb(9, 9, 79);
+ }
+
+ th{
+    background-color: rgb(31, 4, 39);
+    color: aliceblue;
+
+ }
+
+ .footer , .footer-in{
+   margin-left: auto;
+   margin-right: auto;
+   display: block;
+   margin-top: 10px;
+ }
+
+ .footer-in{
+   background-color: azure;
+   padding: 5px;
+   border-radius: 5px;
+   text-align: center;
+ }
+
+ button[type="submit"]{
+   background-color: rgb(89, 251, 89);
+   color: aliceblue;
+ }
+
+ .para{
+   text-align: center;
+   display: block;
+   margin: auto;
+   width: 600px;
+ }
