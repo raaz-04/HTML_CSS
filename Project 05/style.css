@@ -1,0 +1,34 @@
+.banner{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    background-color: green;
+    color: aliceblue;
+}
+
+audio{
+    width: 200px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.img{
+    width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    height: 400px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project 05</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <img src="audio.jpg" alt="" class="banner">
+    </div>
+    <div>
+        <button class="btn" type="button" onclick="nextslide()">Play</button>
+    </div>
+    <audio id="audio" controls src="music1.mp3"></audio>
+    <img class="img" id="album" src="img1.jpg">
+
+    <script>
+        var images = [
+            "img1.jpg",
+            "img2.jpg"
+        ]
+
+        var music = [
+            "music1.mp3",
+            "music2.mp3"
+        ]
+
+        var i=0;
+
+        function nextslide(){
+            i++;
+            if(i>=images.length){i=0;}
+
+            var audio = document.getElementById('audio');
+            var album = document.getElementById('album');
+
+            audio.src = music[i];
+            album.src = images[i];
+            audio.play();
+            }
+    </script>
+</body>
+</html>
