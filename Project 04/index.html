@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project 04</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <img src="audio.jpg" alt="" class="banner">
+    <div>
+        <button id="toggle" class="btn" aria-pressed="false" aria-label="Play" style="width: 300px; height: 100px; background-color: red; color: white;font-size: 80px;" value="Play">Play</button>
+        <audio id="audio">
+            <source src="music.mp3" type="audio/mp3">
+        </audio>
+    </div>
+
+    <script>
+        const btn = document.getElementById('toggle');
+        const audio = document.getElementById('audio');
+
+        function setUI(playing){
+            btn.classList.toggle('playing' , palying);
+            btn.setAttribute('aria-pressed', playing);
+            btn.setAttribute('aria-label', playing? 'Pause' : 'Play');
+        }
+
+        async function toggleAudio() {
+            if(audio.paused){
+                try{
+                    await audio.play();
+                    setUI(true);
+                } catch(err){
+                    console.warn('Playback blocked: ', err);
+                }
+            } else{
+                audio.pause();
+                setUI(false);
+            }
+        }
+
+        btn.addEventListener('click', toggleAudio);
+        audio.addEventListener('ended', () =>{
+            audio.currentTime = 0;
+            setUI(false);
+        })  
+    </script>
+</body>
+</html>
